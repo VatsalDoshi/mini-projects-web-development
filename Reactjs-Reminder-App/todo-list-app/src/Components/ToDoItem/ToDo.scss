@@ -1,0 +1,19 @@
+
+[class*='list-item']{
+    background-color:lavender;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2em;
+    margin: 1em;
+    >span{
+        display: flex;
+    }
+}
+
+.completed-list{
+    >.title{
+        text-decoration:line-through;
+    }
+    >.description,.duedate,.duetime{
+        display: none;
+    }
+}

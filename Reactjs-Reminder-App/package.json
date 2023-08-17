@@ -1,0 +1,28 @@
+{
+  "name": "assignment-10-vatsaldoshi",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-8d59dc4de5201274e310e4c54b9627a8934c3b88527886e3b421487c677d23eb.svg)](https://classroom.github.com/a/QIcAv7Ya)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info-6150-spring-2023/assignment-10-VatsalDoshi.git"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info-6150-spring-2023/assignment-10-VatsalDoshi/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info-6150-spring-2023/assignment-10-VatsalDoshi#readme",
+  "dependencies": {
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.4"
+  }
+}
