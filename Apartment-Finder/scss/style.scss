@@ -1,0 +1,503 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.light-blue-font {
+    color: $light-blue-font;
+}
+.dark-blue-font {
+    color: $dark-blue-font;
+}
+a {
+    color: black;
+    text-decoration: none;
+    color: $dark-blue-font;
+}
+/* this applies changes to every button present  */
+button {
+    padding: 9px 25px;
+    font-family: 'Roboto Condensed', sans-serif;;
+    background-color: $button-color;
+    border: none;
+
+    // Math operator 
+    // border-radius: operator.div(500px, 100);
+    cursor: pointer;
+
+    // Math operator 
+    @extend .operators;
+    font-weight: 500;
+    // @debug 10px + 10;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+/* This is used to style the header which includes logo, navbar and search,login options  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+.logo {
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    color: black;
+    text-decoration: none;
+}
+.nav_links li a:hover,.nav_links li a.active {
+    text-decoration: none;
+    color: $light-blue-font;
+}
+.search{
+    border: 1px dashed black;
+    font-size: 20px;
+    border-radius: 20px;
+}
+/* .nav_links a{
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+.nav_links li a:hover{
+    color: blue;
+}
+.nav_links li a:active{
+    color: #021bff;
+} */
+/* .nav_links li a:visited{
+    color: blue;
+} */
+
+// Loops
+@each $name, $color in $colors{
+    .#{$name} {
+        color: $color;
+
+    }
+}
+
+
+/* This is for the main tagline of this website */
+.left-textbox{
+    padding: 20px;
+    margin-top: 100px;
+    
+    display: inline-block;
+    width: 39%;
+    /* border: 2px solid red; */
+    box-shadow: 2px 2px 6px $white-box;
+    background-color: $white-box;
+    border-radius: 50px;
+    font-size: 30px;
+
+    // Math operator 
+    @extend .operator;
+}
+
+.left-textbox h1{
+
+    // function 
+    font-size: add(20px,20px,20px);
+}
+
+
+.left-textbox p{
+    // font-size: add(20,10,10);
+    font-size: 20px;
+
+    // function 
+    font-weight: weight(light);
+
+}
+
+
+
+/* This is for the buy,sell and rent button  */
+.threebuttons{
+    margin: 40px;
+    width: 300px;
+       
+}
+
+/* THis is for the background image  */
+.back-image {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 480px;
+    background-size: 20px;
+    width: 300px;
+    height: 300px;
+  }
+
+
+
+
+
+/* This is for the form box where the user will enter city, select their apt type and give their price range and if the want more filtering options theres also a advance filter  */
+.form-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    /* border: 2px solid red; */
+    /* box-shadow: 2px 2px 6px lightgray; */
+    box-shadow: 2px 2px 6px $white-box;
+    background-color: $white-box;
+    width: 60%;
+    border-radius: 20px;
+    
+    
+}
+.form-group{
+    padding: 30px;
+    
+    
+}
+input::placeholder {
+    color: $light-blue-font;
+}
+.form-box a{
+    font-size: 20px;
+    margin: 10px;
+}
+.advance-filter{
+    padding: 20px;
+}
+select{
+    color: $light-blue-font;
+}
+
+/* This is for dream apts where the user is able to select their dream apt and click on continue then it will redirect to their desired apartment  */
+
+.dream-apt > ul {
+    display: flex;
+    justify-content: center;
+}
+.d-card{
+    background-color: $white-box;
+
+    @extend .space-horizontally;
+    margin: 1em;
+    // Inheritance 
+    @include border-radius(2px 2px 6px, 10px);
+}
+.d-img{
+    
+    
+}
+.t{
+    text-align: center;
+    color: grey;
+}
+
+.dream-apt > img{
+    border-radius: 40px;
+}
+
+.dapt{
+    text-align: center;
+}
+.dream-apt p{
+    font-size: 20px;
+}
+.dream-apt h1{
+    color: $dark-blue-font;
+}
+.dream-apt h1::first-line{
+    color: $light-blue-font;
+}
+[type=radio] { 
+    
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+}
+/* CHECKED STYLES */
+[type=radio]:checked + img {
+    outline: 2px solid #f00;
+}
+
+.continue{
+    margin-top: 22px;
+    margin-left: 900px;
+}
+
+/* This is for Featured Apartments */
+.title{
+    text-align: center;
+}
+section.gallery {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.gallery > ul {
+    display: flex;
+    padding: 2em 0em 2em 0em;
+    justify-content: center;
+}
+.apt-card {
+    background-color: $white-box;
+    padding: 30px 30px 30px 30px;
+    border-radius: 2em;
+    box-shadow: 2px 2px 6px lightgray;
+    margin: 1em;
+}
+  
+.apt-img {
+    display: flex;
+    position: relative;
+}
+  
+.apt-img > img:nth-child(1) {
+    border-radius: 2em;
+}
+  
+.apt-img > div > img {
+    filter: brightness(0) invert(1);
+}
+  
+.for-rent {
+    background-color: #61ff05;
+    font-size: 15px;
+    padding: 0px 14px;
+    margin: 0px 359px;
+    /* border-radius: 12px; */
+    position: absolute;
+    /* right: 0; */
+}
+.bath-tub{
+    margin: -45px 0px 28px 26px;
+    width: auto;
+    height: 30px;
+}
+.away{
+    background-color: #666;
+    font-size: 15px;
+    position: absolute;
+    padding: 0px 5px;
+    margin: 9px 7px;
+    border-radius: 23px;
+}
+  
+.fsize{
+    font-size: 25px;
+
+}
+.str{
+    font-size: 20px;
+}
+.rating {
+    display: flex;
+    background-color: #bad5f0;
+    
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.info{
+    padding: 10px;
+    
+}
+.infos{
+    display: flex;
+    width: 10%;
+    font-size: 20px;
+}
+  
+.rating > div > p:nth-child(2) {
+    white-space: nowrap;
+}
+
+
+.dots{
+    align-self: center;
+    margin-top: 20px;
+}
+.dot > span {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.light-blue {
+    background-color: #98bbdf;
+}
+.dark-blue {
+    background-color: #0054a6;
+}
+
+
+/* This is for the Apartment plans  */
+.apt-plans{
+    
+    background-color: #c6d8eb;
+    padding: 10px;
+}
+.apt-plans h1{
+    margin-top: 100px;
+    font-size: 40px;
+}
+.apt-plans h1 , .nav_links{
+    text-align: center;
+
+}
+/* .apt_links{
+    margin-top: 50px;
+} */
+
+/* this is th box inside the aprtment plans  */
+.middle-box{
+    display: flex;
+    background-color: white;
+    /* margin-bottom: 510px; */
+    width: 80%;
+    margin: 42px 150px;
+    padding: 50px;
+    box-shadow: 2px 2px 6px rgb(30, 31, 32);
+
+}
+/* blue box inside the middle box  */
+.blue-box{
+    background-color: #0054a6;
+    color: white;
+    /* margin-left: 30px; */
+    padding: 20px;
+    font-size: 25px;
+}
+
+/* the floor blueprint next to blue box  */
+.blueprint{
+    
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    
+}
+/* This is the part where multiple images are overlapped on to one other  */
+.pic{
+    position: absolute;
+    z-index: -4;
+    margin: -496px 654px;
+    
+}
+.overlap1{
+    z-index: -3;
+    margin: -393px 691px;
+}
+.overlap2{
+    z-index: -2;
+    margin: -276px 533px;
+}
+.play{
+    z-index: -1;
+    margin: -157px 718px;
+}
+
+.last-part{
+    padding: 50px;
+    font-size: 30px;
+}
+
+.cta1{
+    margin: 20px 120px;
+    
+}
+
+/* This is the part above footer  */
+.foot{
+    margin-top: 350px;
+    background-color: #14395b;
+    justify-content: space-evenly;
+    color: white;
+    display: flex;
+    padding: 40px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.foot_mid{
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+.foot_mid li{
+    padding: 10px;
+    color: white;
+    list-style-type: none;  
+     
+
+}
+
+.foot_mid {
+    list-style-type: none;  
+     
+}
+.foot_mid a{
+    color: white;
+}
+
+
+.foot_right li{
+    padding: 10px;
+    color: white;
+    list-style-type: none;  
+     
+
+}
+
+.foot_right {
+    list-style-type: none;  
+     
+}
+.foot_right a{
+    color: white;
+}
+
+
+
+
+/* This is the footer  */
+.footer{
+    background-color: #0b2f50;
+    padding: 20px;
+    
+}
+.footer p{
+    margin: 0px 300px;
+    color: white;
+}
+

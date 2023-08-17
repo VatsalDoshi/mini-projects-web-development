@@ -1,0 +1,12 @@
+
+// @function weight($weight-name){
+//     @return map-get($font-weights , $weight-name)
+//   }
+
+@function add($numbers...) {
+    $add: 0;
+    @each $number in $numbers {
+      $add: $add + $number;
+    }
+    @return $add;
+  }

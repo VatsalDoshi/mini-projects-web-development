@@ -1,0 +1,22 @@
+{
+  "name": "assignment-4-vatsaldoshi",
+  "version": "1.0.0",
+  "description": "Assignment 3\r Vatsal Doshi",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx sass scss/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neu-mis-info-6150-spring-2023/assignment-4-VatsalDoshi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neu-mis-info-6150-spring-2023/assignment-4-VatsalDoshi/issues"
+  },
+  "homepage": "https://github.com/neu-mis-info-6150-spring-2023/assignment-4-VatsalDoshi#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}

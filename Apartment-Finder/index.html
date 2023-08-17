@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MODERN</title>
+  <link rel="stylesheet" href="dist/main.css">
+</head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body>
+  <!-- Header for this website -->
+  <header>
+    <!-- for logo -->
+    <img class="logo" src="img/logo.png" alt="Not Available">
+    <!-- for navbar -->
+    <nav>
+      <ul class="nav_links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Featured</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="right">
+      <!-- for search option and login button -->
+      <input type="text" name="search" class="search" id="search" placeholder="Saved Search">
+      <i class="fa">&#xf0f3;</i>
+      <a class="cta" href="#"><button>Login</button></a>
+    </div>
+
+  </header>
+
+  <div class="left-textbox">
+    <!-- this is the first text box  -->
+    <h1 class="light-blue-font">Let's find </h1>
+    <h1 class="dark-blue-font operator">yours Dream...</h1> <br>
+    <p> <strong> Building award winning properties across <br> London UK and the All world</strong></p>
+  </div>
+
+  <div class="threebuttons operators">
+    <!-- this is the buy,sell and rent button above the form  -->
+    <button class="buy" type="button">Buy</button>
+    <button class="sell" type="button">Sell</button>
+    <button class="rent" type="button">Rent</button>
+  </div>
+
+  <div class="form-box">
+    <div class="form-group">
+      <form action="noaction.php">
+        <!-- this is to enter the city name  -->
+        <label for="apt-type">City/ Street</label><br>
+        <input type="text" name="" placeholder="Enter City">
+      </form>
+    </div>
+
+    <div class="form-group">
+      <form action="noaction.php">
+        <!-- this is to select the apartment type  -->
+        <label for="apt-type">Apartment Type</label><br>
+        <select name="apts">
+          <option value="Deluxe Portion">Deluxe Portion</option>
+          <option value="Regular">Regular</option>
+          <option value="Suit">Suit</option>
+        </select>
+
+      </form>
+    </div>
+
+    <div class="form-group">
+      <form action="noaction.php" method="get">
+        <!-- this is to select hte price range -->
+        <label for="vol">Price Range</label><br>
+        <select>
+          <option value="0-100">0-100</option>
+          <option value="100-200">100-200</option>
+          <option value="200">200 &plus;</option>
+        </select>
+      </form>
+    </div>
+
+    <!-- This is to see more filters other than the options seen in the form  -->
+    <p class="advance-filter"> <a href="#">&plus; Advance Filter</a> </p>
+
+    <button class="sear" type="button">Search</button>
+  </div>
+
+  <div class="back-image">
+    <!-- this is the background image  -->
+    <img class="back-image1" src="img/img4.png" alt="">
+  </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+  <div class="dream-apt">
+    <!-- This is the dream apartment part of the website  -->
+    <div class="dapt">
+      <h1>HI, What do you want to your <br>Dream Apartment </h1>
+      <p>Select a Apartment type below to begin</p> <br><br><br>
+    </div>
+    
+    <ul>
+      <li>
+        <div class="d-card">
+          <div class="d-img">
+            <label for="">
+              <input type="radio" name="test" value="small" checked>
+              <img src="img/img1.png" alt="not available" height="300" width="300">
+            </label>
+          </div>
+          
+        
+        <div class="t">
+          <p>Deluxe Portion</p>
+          <img class="tick" src="img/tick.png" alt="">
+        </div>
+      </div>
+      </li>
+
+      <li>
+        <div class="d-card">
+          <div class="d-img">
+            <label for="">
+              <input type="radio" name="test" value="small">
+              <img src="img/img2.png" alt="not available" height="300" width="300">
+            </label>
+          </div>
+          
+        
+        <div class="t">
+          <p>Double Height</p>
+        </div>
+      </div>
+      </li>
+
+      <li>
+        <div class="d-card">
+          <div class="d-img">
+            <label for="">
+              <input type="radio" name="test" value="small">
+              <img src="img/img3.png" alt="not available" height="300" width="300">
+            </label>
+          </div>
+          
+        
+        <div class="t">
+          <p>Penthouse</p>
+        </div>
+      </div>
+      </li>
+
+      <li>
+        <div class="d-card">
+          <div class="d-img">
+            <label for="">
+              <input type="radio" name="test" value="small">
+              <img src="img/img4.png" alt="not available" height="300" width="300">
+            </label>
+          </div>
+          
+        
+        <div class="t">
+          <p>The Studio</p>
+          
+        </div>
+      </div>
+      </li>
+
+
+      
+    </ul>
+
+
+
+
+    
+    <!-- <label>
+
+      <input type="radio" name="test" value="small" checked>
+      <img src="img/img1.png" alt="not available" height="200" width="200">
+      <label for="img">Deluxe Portion</label>
+      
+    </label>
+    <label>
+      <input type="radio" name="test" value="small">
+      <img src="img/img2.png" alt="not available" height="200" width="200">
+      <label for="img">Double Height</label>
+      
+    </label>
+    <label>
+      <input type="radio" name="test" value="small">
+      <img src="img/img3.png" alt="not available" height="200" width="200">
+      <label for="img">Penthouse</label>
+      
+    </label>
+    <label>
+      <input type="radio" name="test" value="small">
+      <img src="img/img4.png" alt="not available" height="200" width="200">
+      <label for="img">The Studio</label>
+      
+    </label>
+    <br>-->
+    <button class="continue" type="button">Continue</button><br><br> 
+  </div>
+
+
+
+  <section class="gallery">
+    <!-- This is the Featured apartment part of the website  -->
+    <div class="title">
+      <h1 class="dark-blue-font">Featured Apartment</h1>
+      <p>The most frequently searched and most popular apartment of the application will be in the list</p>
+    </div>
+    <ul>
+
+
+      <li>
+        <div class="apt-card">
+          
+          <div class="apt-img">
+            <img src="img/img3.png" alt="">
+            
+            <div class="for-rent">
+              <p>FOR RENT</p>
+            </div>
+            
+            <div class="away">
+              <p>1.2 km away</p>
+            </div>
+            
+          </div>
+          
+          <div class="apt-details">
+            <div class="location">
+              <div class="loca">
+                <img class="loca" src="img/location.png" alt="">
+              </div>
+              <p class="loc">Knightsbridge</p>
+              <div class="cover_photo">
+                <img src="img/cover_photo.png" alt="">
+              </div><br><br>
+              <p class="dark-blue-font fsize">$2,500</p>
+              <p class="str"> <strong>Apartment London</strong></p>
+              <p class="text">Beautiful huge 1 family house in heart of Wesrbury <br> Newly Renovated with new Furniture
+              </p>
+            </div>
+            
+            <div class="rating">
+              
+              <div class="infos">
+                <div class="info">
+                  <p class="dark-blue-font">2</p>
+                  <img class="bath-tub" src="img/bed-1.png" alt="NA" height="10" width="10" >
+                  <p>Bedroom</p>
+                </div>
+                <div class="info">
+                  <p class="dark-blue-font">2</p>
+                  <img class="bath-tub" src="img/bathtub-1.png" alt="">
+                  <p>Bathroom</p>
+                </div>
+                <div class="info">
+                  <p class="dark-blue-font">1776</p><br>
+                  <p>Area</p>
+                </div>
+                <div class="tbuttons">
+                  <img src="img/3buttons.png" alt="" width="150px">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+
+
+      <li>
+        <div class="apt-card">
+          <div class="apt-img">
+            <img src="img/img1.png" alt="">
+            <div class="for-rent">
+              <p>FOR SELL</p>
+            </div>
+            <div class="away">
+              <p>20 km away</p>
+            </div>
+          </div>
+          <div class="apt-details">
+            <div class="location">
+              <div class="loca">
+                <img class="loca" src="img/location.png" alt="">
+              </div>
+              <p class="loc">Belmont Garden,Chicago</p>
+              <div class="cover_photo">
+                <img src="img/cover_photo.png" alt="">
+              </div><br><br>
+              <p class="dark-blue-font fsize">$30000</p>
+              <p class="str"> <strong>Studio Apartmnet</strong></p>
+              <p class="text">Beautiful huge 1 family house in heart of Wesrbury <br> Newly Renovated with new Furniture
+              </p>
+            </div>
+
+            <div class="rating">
+              <div class="infos">
+                <div class="info">
+                  <p class="dark-blue-font">2</p>
+                  <img class="bath-tub" src="img/bed-1.png" alt="">
+                  <p>Bedroom</p>
+                </div>
+                <div class="info">
+                  <p class="dark-blue-font">2</p>
+                  <img class="bath-tub" src="img/bathtub-1.png" alt="">
+                  <p>Bathroom</p>
+                </div>
+                <div class="info">
+                  <p class="dark-blue-font">2500</p><br>
+                  <p>Area</p>
+                </div>
+                <div class="tbuttons">
+                  <img src="img/3buttons.png" alt="" width="150px">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+
+      <li>
+        <div class="apt-card">
+          <div class="apt-img">
+            <img src="img/img2.png" alt="">
+            <div class="for-rent">
+              <p>FOR RENT</p>
+            </div>
+            <div class="away">
+              <p>5.6 km away</p>
+            </div>
+          </div>
+          <div class="apt-details">
+            <div class="location">
+              <div class="loca">
+                <img class="loca" src="img/location.png" alt="">
+              </div>
+              <p class="loc">Timber Yard, Birmingham Circle, Center,B5</p>
+              <div class="cover_photo">
+                <img src="img/cover_photo.png" alt="">
+              </div><br><br>
+              <p class="dark-blue-font fsize">$379,000</p>
+              <p class="str"> <strong>Gallard Homes Apartment</strong></p>
+              <p class="text">Beautiful huge 1 family house in heart of Wesrbury <br> Newly Renovated with new Furniture
+              </p>
+            </div>
+
+            <div class="rating">
+              <div class="infos">
+                <div class="info">
+                  <p class="dark-blue-font">2</p>
+                  <img class="bath-tub" src="img/bed-1.png" alt="">
+                  <p>Bedroom</p>
+                </div>
+                <div class="info">
+
+                  <p class="dark-blue-font">2</p>
+                  <img class="bath-tub" src="img/bathtub-1.png" alt="">
+                  <p>Bathroom</p>
+
+                </div>
+                <div class="info">
+                  <p class="dark-blue-font">1041</p><br>
+                  <p>Area</p>
+                </div>
+                <div class="tbuttons">
+                  <img src="img/3buttons.png" alt="" width="150px">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+
+    <div class="dots">
+      <div class="dot">
+        <span class="light-blue"></span>
+        <span class="dark-blue"></span>
+        <span class="light-blue"></span>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="apt-plans">
+    <!-- This is the apartment plan part of the website  -->
+    <h1>Apartment Plans</h1><br>
+
+    <ul class="nav_links apt_links">
+      <!-- This shows the different apartments available and their blueprint  -->
+      <li><a href="#">The Studio</a></li>
+      <li><a class="active" href="#">Deluxe Portion</a></li>
+      <li><a href="#">Penthouse</a></li>
+      <li><a href="#">Top Garden</a></li>
+      <li><a href="#">Double Height</a></li>
+    </ul>
+
+    <div class="middle-box">
+      <div class="blue-box">
+        <!-- THis shows the description of the apartment type clicked on  -->
+        <h2>Deluxe Portion</h2>
+        <p>Boasting chic interiors, three private balconies and a remarkable terrace <br> this two bedroom
+          apartment will epitomise complete luxury. Not only will <br> residents benefit from a superb
+          location in the heart of Shoreditch, but <br>they will also enjoy unrivilled facilities and a
+          24-hour bespoke concierge </p><br>
+        <p>Total Area .................................. 2800 Sq. Ft</p>
+        <p>Bedroom ................................... 2800 Sq. Ft</p>
+        <p>Bathroom .................................. 2800 Sq. Ft</p>
+        <p>Smoking/pets ............................ 2800 Sq. Ft</p>
+        <p>Lounge ..................................... 2800 Sq. Ft</p>
+      </div>
+
+      <div class="blueprint">
+        <!-- this is the blue print of the apartment type clicked on  -->
+        <img src="img/blueprint.png" alt="NA" height="700" width="700">
+      </div>
+
+    </div>
+
+    </div>
+
+    <div class="last-part">
+      <h1>Buy <br><br> Dream Apartment <br><br> In <span class="light-blue-font">Prime location</span></h1>
+
+    </div>
+    <div class="sap">
+      <a class="cta1" href="#"><button>See All Apartments</button></a>
+    </div>
+    
+
+    <div class="overlap-images">
+      <!-- This is to overlap multiople images on top of one other  -->
+      <img src="img/Union 2.png" alt="" class="pic" width="300" height="300">
+      <img src="img/overlap1.png" class="overlap1" alt="" width="900" height="800">
+      <img src="img/overlap2.png" class="overlap2" width="500" height="350" alt="Zoom">
+      
+      <img src="img/Group 9722.png" class="play" alt="">
+      
+    </div>
+    <div class="foot">
+
+    
+    <div class="foot_left">
+      <div class="f_left">
+        <!-- This part contains the logo , company motto and their social medias  -->
+        
+          <img class="modern" src="img/logo.png" alt=""><br><br>
+        
+          <p>The most beautiful exclusive <br>
+            properties and luxury apartments
+          </p><br><br>
+    
+          <a href="#" ><img src="img/fb.png" alt=""></a>
+          <a href="#"> <img src="img/tweeter.png" alt=""></a>
+          <a href="#"><img src="img/insta.png" alt=""></a>
+          <a href="#"><img src="img/telegram.png" alt=""></a>
+    </div>
+
+    </div>
+
+    <div class="foot_mid">
+      <!-- This contains all the useful links  -->
+      <ul>
+        <li>Useful Links</li><br><br>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Partners</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="foot_right">
+      <!-- this contains the help section  -->
+      <ul>
+        <li>Help?</li><br><br>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Term & Condition</a></li>
+        <li><a href="#">Policy</a></li>
+        <li><a href="#">Privacy</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <!-- This is the footer  -->
+    <p>© Copyright 2021, morden.com
+    </p>
+  </footer>
+  
+</body>
