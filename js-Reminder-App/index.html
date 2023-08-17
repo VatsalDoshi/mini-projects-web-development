@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JS Reminders App</title>
+        <script src="./scripts/app.js"></script>
+        <link rel="stylesheet" href="./dist/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Hubballi&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <h1>JS Reminders App</h1>
+        <button class="main-button">Add To Do</button>
+        <div class="input-section" status="closed">
+          <input type="text" placeholder="Enter Title Here" class="title" />
+          <input type="text" placeholder="Description" class="description" />
+          <div class="due">
+            <input type="date" placeholder="Due Date" class="duedate" />
+            <input type="time" placeholder="Due Time" class="duetime" />
+          </div>
+          <button class="add-button">Add</button>
+        </div>
+        <ol class="todo-list">
+          <!-- List items will be appended here -->
+        </ol>
+      </body>
+</html>

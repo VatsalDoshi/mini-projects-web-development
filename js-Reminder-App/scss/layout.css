@@ -1,0 +1,20 @@
+body {
+    font-family: "Hubballi", cursive;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f8b195), to(#6c567b));
+    background-image: linear-gradient(to right, #f8b195, #6c567b);
+  }
+  
+  input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 1em;
+    margin: 0.25em;
+    background-color: white;
+  }
+  /*# sourceMappingURL=layout.css.map */

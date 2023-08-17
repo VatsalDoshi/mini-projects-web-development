@@ -1,0 +1,83 @@
+@import "./layout.scss";
+
+body > h1 {
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.open {
+  p,
+  h5 {
+    display: block;
+  }
+}
+.closed {
+  p,
+  h5 {
+    display: none;
+  }
+}
+
+li {
+  background-color: #44b0bb;
+  padding: 1em 2em 1em 2em;
+  margin: 1em 2em 1em 2em;
+  box-shadow: black 6px 6px 20px;
+  border-radius: 1em;
+  &:hover {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+
+    @keyframes slidein {
+      from {
+        background-color: #44b0bb;
+      }
+
+      to {
+        background-color: #b1dee3;
+      }
+    }
+  }
+  > .details-div {
+    > .details-div-due {
+      display: flex;
+    }
+  }
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+div.input-section {
+  background-color: aquamarine;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 0.5em;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10em;
+  margin-right: 10em;
+  .due {
+    display: flex;
+    justify-items: stretch;
+    flex-direction: column;
+  }
+  button {
+    padding: 1em 3em 1em 3em;
+  }
+}
+
+div.input-section[status="closed"] {
+  display: none;
+}
+
+div.input-section[status="open"] {
+  display: block;
+}
+body > h1 {
+  justify-content: space-around;
+  display: flex;
+  background-color: lightgray;
+  padding: 1em;
+}

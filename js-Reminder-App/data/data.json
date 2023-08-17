@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "name":"Web D Assignment",
+        "description":"Complete TO-DO LIST",
+        "time" : "05:00PM",
+        "status": "open"
+    },
+    {
+        "id":2,
+        "name":"Adbms Assignment",
+        "description":"Complete CQL",
+        "time" : "08:00PM",
+        "status": "open"
+    },
+    {
+        "id":3,
+        "name":"Make Dinner",
+        "description":"Make Dinner",
+        "time" : "10:00PM",
+        "status": "open"
+    },
+    {
+        "id":4,
+        "name":"Gym",
+        "description":"Go to the Gym",
+        "time" : "06:00AM",
+        "status": "open"
+    }
+]

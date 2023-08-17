@@ -1,0 +1,112 @@
+body {
+    font-family: "Hubballi", cursive;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(#f8b195), to(#6c567b));
+    background-image: linear-gradient(to right, #f8b195, #6c567b);
+  }
+  
+  input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding: 1em;
+    margin: 0.25em;
+    background-color: white;
+  }
+  
+  .open p,
+  .open h5 {
+    display: block;
+  }
+  
+  .closed p,
+  .closed h5 {
+    display: none;
+  }
+  
+  li {
+    background-color: #44b0bb;
+    padding: 1em 2em 1em 2em;
+    margin: 1em 2em 1em 2em;
+    -webkit-box-shadow: black 6px 6px 20px;
+            box-shadow: black 6px 6px 20px;
+    border-radius: 1em;
+  }
+  
+  li:hover {
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-name: slidein;
+            animation-name: slidein;
+  }
+  
+  @-webkit-keyframes slidein {
+    from {
+      background-color: #44b0bb;
+    }
+    to {
+      background-color: #b1dee3;
+    }
+  }
+  
+  @keyframes slidein {
+    from {
+      background-color: #44b0bb;
+    }
+    to {
+      background-color: #b1dee3;
+    }
+  }
+  
+  li > .details-div > .details-div-due {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .done {
+    text-decoration: line-through;
+  }
+  
+  div.input-section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 10em;
+    margin-right: 10em;
+  }
+  
+  div.input-section .due {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  div.input-section button {
+    padding: 1em 3em 1em 3em;
+  }
+  
+  div.input-section[status="closed"] {
+    display: none;
+  }
+  
+  div.input-section[status="open"] {
+    display: block;
+  }
+  /*# sourceMappingURL=main.css.map */
