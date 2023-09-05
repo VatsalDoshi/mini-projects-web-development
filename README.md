@@ -1,4 +1,5 @@
 # mini-projects-web-development
+![Web-Development-Projects-1-800x391](https://github.com/VatsalDoshi/mini-projects-web-development/assets/114709734/ea67d95f-ab40-449c-b7f1-5b6d238d911a)
 
 
 Developed a diverse portfolio of mini-projects, including a JavaScript-based Tic-Tac-Toe game, two versions of a Reminder App (one in JavaScript, another in React.js), a CRUD API for the Reminder App tested in Postman, an Apartment Finder website, and a calculator utilizing the JavaScript Canvas API
